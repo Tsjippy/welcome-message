@@ -1,5 +1,5 @@
 <?php
-namespace SIM\WELCOME;
+namespace SIM\WELCOMEMESSAGE;
 use SIM;
 
 add_action( 'rest_api_init', function () {
