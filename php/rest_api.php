@@ -2,7 +2,8 @@
 namespace SIM\WELCOMEMESSAGE;
 use SIM;
 
-add_action( 'rest_api_init', function () {
+add_action( 'rest_api_init', __NAMESPACE__.'\restApiInit');
+function restApiInit() {
 	// get_attachment_contents
 	register_rest_route(
 		'sim/v2/frontpage',
@@ -15,4 +16,4 @@ add_action( 'rest_api_init', function () {
 			'permission_callback' 	=> '__return_true',
 		)
 	);
-});
+}
