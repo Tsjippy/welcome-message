@@ -4,11 +4,16 @@
 ### Added
 
 ### Changed
-- sim_submenu_options to sim_submenu_{}_options filter
 
 ### Fixed
 
 ### Updated
+
+## [8.0.4] - 2025-02-13
+
+
+### Changed
+- sim_submenu_options to sim_submenu_{}_options filter
 
 ## [8.0.3] - 2024-11-21
 
