@@ -4,6 +4,7 @@
 ### Added
 
 ### Changed
+- sim_submenu_options to sim_submenu_{}_options filter
 
 ### Fixed
 
