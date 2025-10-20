@@ -13,7 +13,7 @@ function welcomeMessage(){
 		if (empty(get_user_meta( $userId, 'welcomemessage', true ))){
 			wp_enqueue_script('sim_welcome_script', SIM\pathToUrl(MODULE_PATH.'js/message.js'), array('sweetalert'), MODULE_VERSION, true);
 			
-			$welcomeMessage = \SIM\getModuleOption(MODULE_SLUG, 'welcome_message');
+			$welcomeMessage = \SIM\getModuleOption(MODULE_SLUG, 'welcome-message');
 			if(!empty($welcomeMessage)){
 				//Html
 				$html = '<div id="welcome-message">';

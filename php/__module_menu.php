@@ -22,13 +22,13 @@ function moduleOptions($optionsHtml, $settings){
 			'media_buttons' 			=> false,
 			'forced_root_block' 		=> true,
 			'convert_newlines_to_brs'	=> true,
-			'textarea_name' 			=> "welcome_message",
+			'textarea_name' 			=> "welcome-message",
 			'textarea_rows' 			=> 10
 		);
 
 		echo wp_editor(
-			$settings["welcome_message"],
-			"welcome_message",
+			$settings["welcome-message"],
+			"welcome-message",
 			$tinyMceSettings
 		);
 		?>
