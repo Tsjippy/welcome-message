@@ -6,9 +6,14 @@
 ### Changed
 
 ### Fixed
-- module settings
 
 ### Updated
+
+## [8.0.6] - 2025-10-30
+
+
+### Fixed
+- module settings
 
 ## [8.0.5] - 2025-10-13
 
