@@ -1,6 +1,8 @@
 console.log("Welcome.js loaded");
 
-function hideMessage(){
+function hideMessage(event){
+	event.stopImmediatePropagation();
+	
 	//Hide the message
 	document.querySelector("#welcome-message").classList.add('hidden');
 
