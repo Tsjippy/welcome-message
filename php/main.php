@@ -1,6 +1,6 @@
 <?php
-namespace SIM\WELCOMEMESSAGE;
-use SIM;
+namespace TSJIPPY\WELCOMEMESSAGE;
+use TSJIPPY;
 
 
 //Shortcode for the welcome message on the homepage
@@ -11,9 +11,9 @@ function welcomeMessage(){
 
 		//Check if welcome message needs to be shown
 		if (empty(get_user_meta( $userId, 'welcomemessage', true ))){
-			wp_enqueue_script('sim_welcome_script', SIM\pathToUrl(MODULE_PATH.'js/message.js'), array('sweetalert'), MODULE_VERSION, true);
+			wp_enqueue_script('tsjippy_welcome_script', TSJIPPY\pathToUrl(PLUGINPATH.'js/message.js'), array('sweetalert'), PLUGINVERSION, true);
 			
-			$welcomeMessage = \SIM\getModuleOption(MODULE_SLUG, 'welcome-message');
+			$welcomeMessage = \SETTINGS['welcome-message'] ?? false;
 			if(!empty($welcomeMessage)){
 				//Html
 				$html = '<div id="welcome-message">';
