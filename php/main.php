@@ -11,7 +11,7 @@ function welcomeMessage(){
 
 		//Check if welcome message needs to be shown
 		if (empty(get_user_meta( $userId, 'welcomemessage', true ))){
-			wp_enqueue_script('tsjippy_welcome_script', TSJIPPY\pathToUrl(PLUGINPATH.'js/message.js'), array('sweetalert'), PLUGINVERSION, true);
+			wp_enqueue_script('tsjippy_welcome_script', TSJIPPY\pathToUrl(PLUGINPATH.'js/message.js'), [], PLUGINVERSION, true);
 			
 			$welcomeMessage = \SETTINGS['welcome-message'] ?? false;
 			if(!empty($welcomeMessage)){
