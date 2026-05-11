@@ -6,9 +6,14 @@
 ### Changed
 
 ### Fixed
-- get settings
 
 ### Updated
+
+## [10.0.5] - 2026-05-11
+
+
+### Fixed
+- get settings
 
 ## [10.0.4] - 2026-05-07
 
