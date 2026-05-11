@@ -4,7 +4,7 @@
   "description": "message",
   "main": "./message.js",
   "scripts": {
-    "build": "webpack --watch --entry ./message.js --output-path . --output-filename message.min.js --progress --mode=production --devtool source-map",
+    "build": "webpack --entry ./message.js --output-path . --output-filename message.min.js --progress --mode=production --devtool source-map",
     "all": "run-p build"
   },
   "author": "Ewald Harmsen",
