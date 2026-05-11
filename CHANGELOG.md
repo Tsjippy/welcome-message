@@ -6,6 +6,7 @@
 ### Changed
 
 ### Fixed
+- get settings
 
 ### Updated
 
