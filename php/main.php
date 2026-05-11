@@ -13,7 +13,7 @@ function welcomeMessage(){
 		if (empty(get_user_meta( $userId, 'welcomemessage', true ))){
 			wp_enqueue_script('tsjippy_welcome_script', TSJIPPY\pathToUrl(PLUGINPATH.'js/message.js'), [], PLUGINVERSION, true);
 			
-			$welcomeMessage = \SETTINGS['welcome-message'] ?? false;
+			$welcomeMessage = SETTINGS['welcome-message'] ?? false;
 			if(!empty($welcomeMessage)){
 				//Html
 				$html = '<div id="welcome-message">';
