@@ -13,7 +13,9 @@ function restApiInit() {
 			'callback' 				=> function(){
                 update_user_meta(get_current_user_id(), 'welcomemessage', true);
             },
-			'permission_callback' 	=> '__return_true',
+			'permission_callback' 	=> function(){
+				return current_user_can('read');
+			},
 		)
 	);
 }
