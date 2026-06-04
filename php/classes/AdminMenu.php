@@ -1,14 +1,17 @@
 <?php
+
 namespace TSJIPPY\WELCOMEMESSAGE;
+
 use TSJIPPY;
 
 use function TSJIPPY\addRawHtml;
 
-if ( ! defined('ABSPATH')) {
+if (! defined('ABSPATH')) {
     exit;
 }
 
-class AdminMenu extends TSJIPPY\ADMIN\SubAdminMenu{
+class AdminMenu extends TSJIPPY\ADMIN\SubAdminMenu
+{
 
     /**
      * AdminMenu constructor.
@@ -22,19 +25,21 @@ class AdminMenu extends TSJIPPY\ADMIN\SubAdminMenu{
      * @param array $settings The settings for the plugin
      * @param string $name The name of the plugin
      */
-    public function __construct($settings, $name) {
+    public function __construct($settings, $name)
+    {
         parent::__construct($settings, $name);
     }
 
-    public function settings($parent) {
+    public function settings($parent)
+    {
         ob_start();
 
-        ?>
+?>
         <block style='margin-bottom: -30px;'>
             Welcome message on homepage
         </block>
 
-        <?php
+<?php
         $tinyMceSettings = array(
             'wpautop'                     => false,
             'media_buttons'             => false,
@@ -42,29 +47,32 @@ class AdminMenu extends TSJIPPY\ADMIN\SubAdminMenu{
             'convert_newlines_to_brs'    => true,
             'textarea_name'             => "welcome-message",
             'textarea_rows'             => 10
-       );
+        );
 
         wp_editor(
             $this->settings["welcome-message"],
             "welcome-message",
             $tinyMceSettings
-       );
+        );
 
         addRawHtml(ob_get_clean(), $parent);
 
         return true;
     }
 
-    public function emails($parent) {
+    public function emails($parent)
+    {
         return false;
     }
 
-    public function data($parent='') {
+    public function data($parent = '')
+    {
 
         return false;
     }
 
-    public function functions($parent) {
+    public function functions($parent)
+    {
 
         return false;
     }
