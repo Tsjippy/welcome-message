@@ -14,7 +14,7 @@ namespace TSJIPPY\WELCOMEMESSAGE;
  * Plugin URI:            https://github.com/Tsjippy/welcomemessage
  * Tested:                6.9
  * TextDomain:            tsjippy
- * Requires Plugins:    tsjippy-shared-functionality
+ * Requires Plugins:    
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *
@@ -24,7 +24,10 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
-
+// Load shared code
+if (file_exists(__DIR__  . '/shared_functionality/loader.php')) {
+    require_once(__DIR__  . '/shared_functionality/loader.php');
+}
 
 // Define constants
 define(__NAMESPACE__ . '\PLUGIN', plugin_basename(__FILE__));
@@ -32,7 +35,3 @@ define(__NAMESPACE__ . '\PLUGINPATH', __DIR__ . '/');
 define(__NAMESPACE__ . '\PLUGINVERSION', get_plugin_data(__FILE__, false, false)['Version']);
 define(__NAMESPACE__ . '\PLUGINSLUG', str_replace('tsjippy-', '', basename(__FILE__, '.php')));
 define(__NAMESPACE__ . '\SETTINGS', get_option('tsjippy_' . PLUGINSLUG . '_settings', []));
-
-
-
-
