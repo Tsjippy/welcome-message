@@ -14,7 +14,7 @@ function restApiInit()
         array(
             'methods'                 => 'POST',
             'callback'                 => function () {
-                update_user_meta(get_current_user_id(), 'welcomemessage', true);
+                update_user_meta(get_current_user_id(), 'tsjippy_welcomemessage', true);
             },
             'permission_callback'     => function () {
                 return current_user_can('read');
