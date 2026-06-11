@@ -2,14 +2,21 @@
 ## [Unreleased] - yyyy-mm-dd
 
 ### Added
-- user, post and rest_meta prefixing
 
 ### Changed
-- prefixed post metas and shortcodes
 
 ### Fixed
 
 ### Updated
+
+## [10.1.0] - 2026-06-11
+
+
+### Added
+- user, post and rest_meta prefixing
+
+### Changed
+- prefixed post metas and shortcodes
 
 ## [10.0.9] - 2026-06-09
 
