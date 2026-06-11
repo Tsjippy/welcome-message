@@ -20,8 +20,8 @@ function welcomeMessage()
             if (!empty($welcomeMessage)) {
                 //Html
                 $html = '<div id="welcome-message">';
-                $html .= do_shortcode($welcomeMessage);
-                $html .= '<button type="button" class="button" id="welcome-message-button">Do not show again</button>';
+                    $html .= do_shortcode($welcomeMessage);
+                    $html .= '<button type="button" class="button" id="welcome-message-button">Do not show again</button>';
                 $html .= '</div>';
                 return $html;
             }
