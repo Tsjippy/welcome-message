@@ -6,7 +6,7 @@ use TSJIPPY;
 
 
 //Shortcode for the welcome message on the homepage
-add_shortcode("tsjippy_welcome", __NAMESPACE__ . '\welcomeMessage');
+//add_shortcode("tsjippy_welcome", __NAMESPACE__ . '\welcomeMessage');
 function welcomeMessage()
 {
     if (is_user_logged_in()) {
