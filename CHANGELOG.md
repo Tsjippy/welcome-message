@@ -5,6 +5,7 @@
 - welcome message block
 
 ### Changed
+- removed shortcode
 
 ### Fixed
 
