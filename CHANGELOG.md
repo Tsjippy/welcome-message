@@ -6,6 +6,7 @@
 ### Changed
 
 ### Fixed
+- check if edit screen
 
 ### Updated
 
