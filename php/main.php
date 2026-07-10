@@ -9,6 +9,7 @@ use TSJIPPY;
 //add_shortcode("tsjippy_welcome", __NAMESPACE__ . '\welcomeMessage');
 function welcomeMessage()
 {
+    $html   = '';
     if (is_user_logged_in()) {
         $userId = get_current_user_id();
 
@@ -23,10 +24,13 @@ function welcomeMessage()
                     $html .= do_shortcode($welcomeMessage);
                     $html .= '<button type="button" class="button" id="welcome-message-button">Do not show again</button>';
                 $html .= '</div>';
-                return $html;
             }
         }
     }
 
-    return '';
+    if(empty($html) && ($_REQUEST['action'] ?? $_REQUEST['context'] ?? '') == 'edit'){
+        return "<div class='warning'>Welcome message block.<br>This block is not showing for you as you alrady read it.</div>";
+    }
+
+    return $html;
 }
