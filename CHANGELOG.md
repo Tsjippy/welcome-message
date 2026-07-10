@@ -6,9 +6,14 @@
 ### Changed
 
 ### Fixed
-- check if edit screen
 
 ### Updated
+
+## [10.3.2] - 2026-07-10
+
+
+### Fixed
+- check if edit screen
 
 ## [10.3.1] - 2026-07-10
 
