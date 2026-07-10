@@ -2,15 +2,22 @@
 ## [Unreleased] - yyyy-mm-dd
 
 ### Added
+
+### Changed
+
+### Fixed
+
+### Updated
+
+## [10.3.0] - 2026-07-10
+
+
+### Added
 - welcome message block
 - block icon
 
 ### Changed
 - removed shortcode
-
-### Fixed
-
-### Updated
 
 ## [10.2.9] - 2026-07-06
 
