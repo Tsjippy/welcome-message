@@ -8,7 +8,7 @@ add_action('init', __NAMESPACE__ . '\blockInit');
 function blockInit()
 {
     register_block_type(
-        'tsjippy-welcome-message/show_message',
+        'tsjippy-welcome-message/show',
         array(
             'title'            => __( 'Show Welcome Message', 'tsjippy' ),
             'render_callback'  => __NAMESPACE__ . '\welcomeMessage',
