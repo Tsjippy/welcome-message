@@ -3,6 +3,7 @@
 
 ### Added
 - welcome message block
+- block icon
 
 ### Changed
 - removed shortcode
