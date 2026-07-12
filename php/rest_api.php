@@ -9,7 +9,7 @@ function restApiInit()
 {
     // get_attachment_contents
     register_rest_route(
-        'tsjippy/v2/frontpage',
+        'tsjippy/v2/welcome-message',
         '/hide_welcome',
         array(
             'methods'                 => 'POST',

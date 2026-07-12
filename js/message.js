@@ -9,7 +9,7 @@ function hideMessage(event) {
   let formData = new FormData();
   formData.append("_wpnonce", tsjippy.restNonce);
   fetch(
-    `${tsjippy.baseUrl}/wp-json${tsjippy.restApiPrefix}/frontpage/hide_welcome`,
+    `${tsjippy.baseUrl}/wp-json${tsjippy.restApiPrefix}/welcome-message/hide_welcome`,
     {
       method: "POST",
       credentials: "same-origin",
