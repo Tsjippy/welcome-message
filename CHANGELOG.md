@@ -4,11 +4,16 @@
 ### Added
 
 ### Changed
-- rest api path
 
 ### Fixed
 
 ### Updated
+
+## [10.3.6] - 2026-07-12
+
+
+### Changed
+- rest api path
 
 ## [10.3.5] - 2026-07-12
 

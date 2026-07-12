@@ -5,7 +5,7 @@ namespace TSJIPPY\WELCOMEMESSAGE;
 /**
  * Plugin Name:          Tsjippy Welcome Message
  * Description:          This plugin adds a welcome message in a popup for new users
- * Version:              10.3.5
+ * Version:              10.3.6
  * Author:               Ewald Harmsen
  * AuthorURI:            harmseninnigeria.nl
  * Requires at least:    6.3
