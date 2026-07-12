@@ -4,6 +4,7 @@
 ### Added
 
 ### Changed
+- rest api path
 
 ### Fixed
 
