@@ -10,7 +10,7 @@ function blockInit()
     register_block_type(
         'tsjippy-welcome-message/show',
         array(
-            'title'            => __( 'Show Welcome Message', 'tsjippy' ),
+            'title'            => __( 'Show Welcome Message', '%TEXTDOMAIN%' ),
             'render_callback'  => __NAMESPACE__ . '\welcomeMessage',
             'supports'         => array(
                 'autoRegister' => true,
