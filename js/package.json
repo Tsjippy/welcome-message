@@ -4,8 +4,9 @@
   "description": "message",
   "main": "./message.js",
   "scripts": {
-    "build": "webpack --entry ./message.js --output-path . --output-filename message.min.js --progress --mode=production --devtool source-map",
-    "all": "run-p build"
+    "build": "webpack --progress",
+    "watch": "webpack --watch --progress",
+    "all": "npm run build"
   },
   "author": "Ewald Harmsen",
   "license": "ISC",
