@@ -15,14 +15,7 @@ function welcomeMessage()
 
         //Check if welcome message needs to be shown
         if (empty(get_user_meta($userId, 'tsjippy_welcomemessage', true))) {
-            wp_enqueue_script_module('@tsjippy/welcome_script', TSJIPPY\pathToUrl(PLUGINPATH . 'js/message.js'), [], PLUGINVERSION);
-
-            add_filter( 'script_module_data_@tsjippy/welcome_script', function($data){
-                $data['baseUrl']       = get_home_url();
-                $data['restNonce']     = wp_create_nonce('wp_rest');
-
-                return $data; 
-            } );
+            wp_enqueue_script_module('@tsjippy/welcome_script', TSJIPPY\pathToUrl(PLUGINPATH . 'js/message.js'), ["@tsjippy/nonce_script"], PLUGINVERSION);
 
             $welcomeMessage = SETTINGS['welcome-message'] ?? false;
             if (!empty($welcomeMessage)) {

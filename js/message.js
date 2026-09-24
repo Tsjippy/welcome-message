@@ -1,11 +1,13 @@
+import "@tsjippy/nonce_script";
+
 console.log("Welcome.js loaded");
 
 function hideMessage(event) {
-  event.stopImmediatePropagation();
+  event.stopPropagation();
 
   const data   = JSON.parse(
     document.getElementById(
-        'wp-script-module-data-@tsjippy/statistics_script'
+        'wp-script-module-data-@tsjippy/nonce_script'
     ).textContent
   );
 

@@ -1,2 +1,2 @@
 import"@tsjippy/nonce_script";function e(e){e.stopPropagation();const t=JSON.parse(document.getElementById("wp-script-module-data-@tsjippy/nonce_script").textContent);document.querySelector("#welcome-message").classList.add("hidden");let o=new FormData;o.append("_wpnonce",t.restNonce),fetch(`${t.baseUrl}/wp-json/tsjippy/v2/welcome-message/hide_welcome`,{method:"POST",credentials:"same-origin",body:o}).catch(e=>console.error(e))}console.log("Welcome.js loaded"),document.addEventListener("DOMContentLoaded",function(){let t=document.querySelector("#welcome-message-button");null!=t&&t.addEventListener("click",e)});
-//# sourceMappingURL=message.min.js.map
+//# sourceMappingURL=message.mjs.map
