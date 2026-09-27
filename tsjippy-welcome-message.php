@@ -5,13 +5,13 @@ namespace TSJIPPY\WELCOMEMESSAGE;
 /**
  * Plugin Name:          Tsjippy Welcome Message
  * Description:          This plugin adds a welcome message in a popup for new users
- * Version:              10.6.5
+ * Version:              10.6.6
  * Author:               Ewald Harmsen
  * AuthorURI:            harmseninnigeria.nl
  * Requires at least:    6.3
  * Requires PHP:         8.3
  * Plugin URI:           https://github.com/Tsjippy/welcomemessage
- * Tested:               7.1.2
+ * Tested:               7.1
  * TextDomain:           tsjippy
  * Requires Plugins:    
  * License: GPLv2 or later
